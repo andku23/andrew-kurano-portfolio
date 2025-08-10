@@ -1,8 +1,32 @@
+@plugin "daisyui";
+@plugin "@tailwindcss/typography";
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* For Firefox. */
+  * {
+    scrollbar-width: none;
+  }
+
+  /* For WebKit (Chrome & Safari). */
+  ::-webkit-scrollbar {
+    display: none;
+
+
+    :root {
+      --background: #ffffff;
+      --foreground: #171717;
+    }
+  }
 }
 
 @theme inline {
@@ -10,6 +34,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+@theme {
+  --navbar-height: 50px;
+  --about-height: 60vh;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,3 +53,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
