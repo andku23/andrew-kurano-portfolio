@@ -1,7 +1,5 @@
 import {configs} from "@/content/content";
 import Link from "next/link";
-import clsx from "clsx";
-import { Button } from "@chakra-ui/react";
 
 const links = [
     { name: 'LinkedIn', href: configs.common.linkedin },
