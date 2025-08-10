@@ -1,6 +1,7 @@
 import {FC} from "react";
 import clsx from "clsx";
-import Link from "next/link";
+import * as motion from "motion/react-client"
+import type { Variants } from "motion/react"
 
 export interface LiveDemoButtonProps {
     name: string;
@@ -17,7 +18,7 @@ interface Props {
     title: string;
     location: string;
     demo?: LiveDemoButtonProps[];
-    triggerSiteOverview?: Url;
+    triggerSiteOverview?: string;
     tags: string[];
     description: string;
     readMore?: string;
@@ -27,6 +28,34 @@ interface Props {
     video: string;
     bgcolor: string;
     textcolor: string;
+}
+
+const ProjectVariantLeft: Variants = {
+    offscreen: {
+        x: "-100%",
+    },
+    onscreen: {
+        x: "0",
+        transition: {
+            type: "spring",
+            bounce: 0.2,
+            duration: 0.8,
+        },
+    },
+}
+
+const ProjectVariantRight: Variants = {
+    offscreen: {
+        x: "100%",
+    },
+    onscreen: {
+        x: "0",
+        transition: {
+            type: "spring",
+            bounce: 0.2,
+            duration: 0.8,
+        },
+    },
 }
 
 export const ProjectDisplay: FC<Props> = ({
@@ -45,47 +74,52 @@ export const ProjectDisplay: FC<Props> = ({
                                               bgcolor,
                                               textcolor
                                           }) => {
-    return (
-        <div className={clsx(
-            `flex flex-col py-10 `,
-            {
-                'md:flex-row-reverse justify-end': imagePosition === ImagePosition.Right,
-                'md:flex-row justify-start': imagePosition === ImagePosition.Left,
-            },
-        )}
-             style={{backgroundColor: bgcolor, color: textcolor}}>
-            <div className="md:w-150 relative px-5">
-                <img
-                    src={image}
-                    className="rounded-md relative"
-                />
-            </div>
 
-            <div className={clsx(
-                `md:w-full mt-5 md:mt-0 relative flex flex-col px-5 grow`,
+    return (
+        <motion.div initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ amount: 0.3 }}>
+            <motion.div variants={(imagePosition === ImagePosition.Right) ? ProjectVariantLeft : ProjectVariantRight} className={clsx(
+                `flex flex-col py-10 `,
                 {
-                    'text-right items-end': imagePosition === ImagePosition.Right,
-                    'text-left items-start': imagePosition === ImagePosition.Left,
+                    'md:flex-row-reverse justify-end': imagePosition === ImagePosition.Right,
+                    'md:flex-row justify-start': imagePosition === ImagePosition.Left,
                 },
-            )}>
-                <div className={"prose"}>
-                    <h2 style={{color: textcolor}}>{title}</h2>
-                    <h4 style={{color: textcolor}}>{description}</h4>
+            )}
+                        style={{backgroundColor: bgcolor, color: textcolor}}>
+                <div className="md:w-150 relative px-5">
+                    <img
+                        src={image}
+                        className="rounded-md relative"
+                    />
                 </div>
 
                 <div className={clsx(
-                         `flex flex-row mt-5 relative`,
-                         {
-                             'justify-end': imagePosition === ImagePosition.Right,
-                             'justify-start': imagePosition === ImagePosition.Left,
-                         },
-                     )}>
-                    <a href={triggerSiteOverview} target="_blank"
-                          className="btn rounded-md flex justify-items-center bg-primary font-medium hover:bg-sky-100 hover:text-blue-600">
-                        <h4 className={"relative m-0 p-0"}>Overview</h4>
-                    </a>
+                    `md:w-full mt-5 md:mt-0 relative flex flex-col px-5 grow`,
+                    {
+                        'text-right items-end': imagePosition === ImagePosition.Right,
+                        'text-left items-start': imagePosition === ImagePosition.Left,
+                    },
+                )}>
+                    <div className={"prose"}>
+                        <h2 style={{color: textcolor}}>{title}</h2>
+                        <h4 style={{color: textcolor}}>{description}</h4>
+                    </div>
+
+                    <div className={clsx(
+                        `flex flex-row mt-5 relative`,
+                        {
+                            'justify-end': imagePosition === ImagePosition.Right,
+                            'justify-start': imagePosition === ImagePosition.Left,
+                        },
+                    )}>
+                        <a href={triggerSiteOverview} target="_blank"
+                           className="btn rounded-md flex justify-items-center bg-primary font-medium hover:bg-sky-100 hover:text-blue-600">
+                            <h4 className={"relative m-0 p-0"}>Overview</h4>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 }

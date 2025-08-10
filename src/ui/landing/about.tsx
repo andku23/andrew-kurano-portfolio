@@ -1,5 +1,4 @@
 import {configs} from "@/content/content";
-import Image from "next/image";
 import Landing from "@/content/landing.md";
 
 function CustomUL({ children }) {
