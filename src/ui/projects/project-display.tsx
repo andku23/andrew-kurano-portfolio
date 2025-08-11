@@ -114,12 +114,19 @@ export const ProjectDisplay: FC<Props> = ({
                         },
                     )}>
                         <a href={triggerSiteOverview} target="_blank"
-                           className="btn rounded-md flex justify-items-center bg-primary font-medium hover:bg-sky-100 hover:text-blue-600">
+                           className="btn mx-3 rounded-md flex justify-items-center font-medium hover:bg-accent hover:text-white-600">
                             <h4 className={"relative m-0 p-0"}>Overview</h4>
                         </a>
-                    </div>
+                        {demo?.map((itm, idx) => (
+                            <a href={itm.url} target="_blank" key={idx}
+                               className="btn mx-3 rounded-md flex justify-items-center font-medium hover:bg-accent hover:text-white-600">
+                                <h4 className={"relative m-0 p-0"}>{itm.name}</h4>
+                            </a>
+                    ))}
                 </div>
-            </motion.div>
+            </div>
         </motion.div>
-    );
+</motion.div>
+)
+    ;
 }

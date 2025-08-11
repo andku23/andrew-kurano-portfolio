@@ -1,0 +1,44 @@
+{
+    "block-types": [
+        {
+            "name": "normal-wall",
+            "types" : [0, 1],
+            "displayName" : "Regular Wall",
+            "id": 40293277,
+            "imageID": 42204222,
+            "cost": 5
+        },
+        {
+            "name": "door-wall",
+            "types" : [0, 1, 2],
+            "displayName" : "Door Wall",
+            "id": 40293295,
+            "imageID": 42204221,
+            "cost": 10
+        },
+        {
+            "name": "window-wall-1",
+            "types" : [0, 1, 4],
+            "displayName" : "Single Window Wall",
+            "id": 40293297,
+            "imageID": 42204220,
+            "cost": 10
+        },
+        {
+            "name": "window-wall-2",
+            "types" : [0, 1, 4],
+            "displayName" : "Double Window Wall",
+            "id": 40293299,
+            "imageID": 42204223,
+            "cost": 10
+        },
+        {
+            "name": "wooden-floor",
+            "types" : [0, 1, 3],
+            "displayName" : "Wooden Floor",
+            "id": 40398853,
+            "imageID": 42204219,
+            "cost": 10
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{ 
+    "landStates": {
+        "EMPTY": 0,
+        "FILLED": 1,
+        "HARVESTABLE": 2
+    }
+}

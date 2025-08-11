@@ -1,0 +1,21 @@
+{
+    "plantText": {
+        "turnip-default-name": "Turnip",
+        "turnip-default-description": "Just a regular turnip. Has an average of 34 calories. The tops turn purple because they are exposed to the sun.",
+        "turnip-blue-name": "Blurnip",
+        "turnip-blue-description": "Almost like a regular turnip... except blue! What do we call it? Let's just call it a blurnip, and figure out a better name later",
+        "turnip-red-name": "Crimson Turnip",
+        "turnip-red-description": "A bright red turnip with an earthy hue. It gains it's crimson color from killing it's siblings and absorbing their blood",
+        "turnip-gold-name": "Golden Turnip",
+        "turnip-gold-description": "This turnip is made of actual gold!  That's right, not only is it inedible, it also weighs an average of 30 pounds!",
+
+        "tomato-default-name": "Tomato",
+        "tomato-default-description": "Some say tomato, some say tomahto. However you say it, over 3700 people died in California last year from motor vehicle related causes.",
+        "tomato-blue-name": "Blumato",
+        "tomato-blue-description": "Just like a regular tomato, except this unfortunate tomato has clinical depression. I bet he wish he brought his towel",
+        "tomato-white-name": "Pale Tomato",
+        "tomato-white-description": "This tomato used to be a regular tomato, but now he's scared. Why is he scared? He heard about the motor vehicles thing from the regular tomato",
+        "tomato-gold-name": "Golden Tomato",
+        "tomato-gold-description": "Lucky Lucky! Did you know that the tomato is the lucky fruit of literally NO cultures that I could google? You'd think after being the demon fruit for so long, people would consider themselves lucky for not dying eating them."
+    }
+}

@@ -1,5 +1,19 @@
 [
     {
+        "id": "featured-project-site",
+        "title": "This Portfolio Site",
+        "location": "",
+        "demo": [],
+        "triggerSiteOverview": "",
+        "tags": ["React", "NextJS", "Vercel", "Tailwind"],
+        "description": "I haven't had to use React on the job in a little while as my last job mostly used Vue, so I thought building my portfolio in React/NextJS would be a fun little exercise",
+        "image": "/assets/featured-projects/gelighting.jpg",
+        "jpg": "/assets/featured-projects/gelighting.jpg",
+        "video": "/assets/featured-projects/gelighting.mp4",
+        "bgcolor": "#dedede",
+        "textcolor": "#121212"
+    },
+    {
         "id": "featured-project-0",
         "title": "GE Lighting CES Demo  ",
         "location": "",
@@ -10,7 +24,7 @@
             }
         ],
         "triggerSiteOverview": "https://www.triggerxr.com/work/ge-lighting-ces-quicklook-and-virtual-home",
-        "tags": [],
+        "tags": ["Vue", "Playcanvas", "Sass"],
         "description": "A web based lighting demo to showcase GE Lighting's various automated lighting setups and controls.  The largest tech lift on this project was figuring out a good system to tie the Vue side UI controls to the PlayCanvas timeline/curve system we created... and figuring out the baked/dynamic lighting combo.",
         "image": "/assets/featured-projects/gelighting.jpg",
         "jpg": "/assets/featured-projects/gelighting.jpg",
@@ -35,7 +49,7 @@
         "jpg": "/assets/featured-projects/venom.jpg",
         "video": "/assets/featured-projects/gelighting.mp4",
         "bgcolor": "#111111",
-        "textcolor": "#dedede"
+        "textcolor": "#cecece"
     },
     {
         "id": "featured-project-2",

@@ -10,7 +10,7 @@ function CustomLI({ children }) {
 }
 
 function CustomP1({ children }) {
-    return <div className="prose"><p>{children}</p></div>
+    return <div className="prose"><h4>{children}</h4></div>
 }
 
 

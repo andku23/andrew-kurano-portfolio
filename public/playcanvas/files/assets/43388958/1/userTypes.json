@@ -1,0 +1,6 @@
+{ 
+    "userTypes": {
+        "PLAYER": 0,
+        "STREAMER": 1
+    }
+}
