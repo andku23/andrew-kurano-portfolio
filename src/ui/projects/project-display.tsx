@@ -101,9 +101,9 @@ export const ProjectDisplay: FC<Props> = ({
                         'text-left items-start': imagePosition === ImagePosition.Left,
                     },
                 )}>
-                    <div className={"prose"}>
-                        <h2 style={{color: textcolor}}>{title}</h2>
-                        <h4 style={{color: textcolor}}>{description}</h4>
+                    <div className={"md:max-w-220"}>
+                        <h3 className={"mb-5"} style={{color: textcolor}}>{title}</h3>
+                        <p style={{color: textcolor}}>{description}</p>
                     </div>
 
                     <div className={clsx(
@@ -114,7 +114,7 @@ export const ProjectDisplay: FC<Props> = ({
                         },
                     )}>
                         <a href={triggerSiteOverview} target="_blank"
-                           className="btn mx-3 rounded-md flex justify-items-center font-medium hover:bg-accent hover:text-white-600">
+                           className="btn rounded-md flex justify-items-center font-medium hover:bg-accent hover:text-white-600">
                             <h4 className={"relative m-0 p-0"}>Overview</h4>
                         </a>
                         {demo?.map((itm, idx) => (

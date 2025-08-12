@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Sansation, Roboto } from 'next/font/google';
 import "./globals.css";
 import NavBar from "@/ui/navbar/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"]
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const sansation = Sansation({
+  variable: "--font-sansation",
+  weight: "400"
+});
+
+const roboto = Roboto({
+  variable: "--font-roboto",
+  weight: "400"
 });
 
 export const metadata: Metadata = {
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="cupcake">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${sansation.variable} ${roboto.variable} antialiased`}
       >
         <NavBar></NavBar>
         <div className = "h-(--navbar-height)"/>
