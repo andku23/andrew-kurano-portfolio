@@ -1,19 +1,5 @@
 [
     {
-        "id": "featured-project-site",
-        "title": "This Portfolio Site",
-        "location": "",
-        "demo": [],
-        "triggerSiteOverview": "",
-        "tags": ["React", "NextJS", "Vercel", "Tailwind"],
-        "description": "I haven't had to use React on the job in a little while as my last job mostly used Vue, so I thought building my portfolio in React/NextJS would be a fun little exercise",
-        "image": "/assets/featured-projects/site.jpg",
-        "jpg": "/assets/featured-projects/site.jpg",
-        "video": "/assets/featured-projects/gelighting.mp4",
-        "bgcolor": "#dedede",
-        "textcolor": "#121212"
-    },
-    {
         "id": "featured-project-0",
         "title": "GE Lighting CES Demo  ",
         "location": "",
