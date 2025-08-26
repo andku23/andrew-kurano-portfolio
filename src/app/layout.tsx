@@ -16,7 +16,8 @@ const sansation = Sansation({
 
 const roboto = Roboto({
   variable: "--font-roboto",
-  weight: "400"
+  weight: "400",
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {
