@@ -11,7 +11,8 @@ const inter = Inter({
 
 const sansation = Sansation({
   variable: "--font-sansation",
-  weight: "400"
+  weight: "400",
+  subsets: ["latin"]
 });
 
 const roboto = Roboto({
