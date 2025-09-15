@@ -12,7 +12,6 @@ export default function Home() {
                 <SectionHeader title={"Work Projects"}/>
                 <Projects/>
                 <SectionHeader title={"Personal Projects"}/>
-                <PlayCanvasGame/>
             </main>
         </div>
     );
