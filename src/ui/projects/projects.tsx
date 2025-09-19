@@ -1,3 +1,5 @@
+'use client'
+
 import {configs} from "@/content/content";
 import {ImagePosition, ProjectDisplay} from "@/ui/projects/project-display";
 
