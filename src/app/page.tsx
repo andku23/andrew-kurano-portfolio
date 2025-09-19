@@ -9,9 +9,9 @@ export default function Home() {
         <div>
             <main>
                 <About/>
-                <SectionHeader title={"Work Projects"}/>
+                <SectionHeader title={"Key Projects"}/>
                 <Projects/>
-                <SectionHeader title={"Personal Projects"}/>
+                <SectionHeader title={"Other Projects"}/>
             </main>
         </div>
     );

@@ -1,4 +1,6 @@
-import {FC} from "react";
+'use client'
+
+import {FC, useState} from "react";
 import clsx from "clsx";
 import * as motion from "motion/react-client"
 import type { Variants } from "motion/react"
@@ -58,6 +60,7 @@ const ProjectVariantRight: Variants = {
     },
 }
 
+
 export const ProjectDisplay: FC<Props> = ({
                                               id,
                                               title,
@@ -75,23 +78,50 @@ export const ProjectDisplay: FC<Props> = ({
                                               textcolor
                                           }) => {
 
+    const [isHovered, setIsHovered] = useState<"inactive" | "active">(
+        "inactive"
+    );
+
+    const handleMouseEnter = () => {
+        setIsHovered("active");
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered("inactive");
+    };
+
     return (
         <motion.div initial="offscreen"
                     whileInView="onscreen"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                     viewport={{ amount: 0.3 }}>
-            <motion.div variants={(imagePosition === ImagePosition.Right) ? ProjectVariantLeft : ProjectVariantRight} className={clsx(
-                `flex flex-col py-10 `,
+            <motion.div variants={
+                (imagePosition === ImagePosition.Right) ? ProjectVariantLeft : ProjectVariantRight} className={clsx(
+                `flex flex-col py-10`,
                 {
                     'md:flex-row-reverse justify-end': imagePosition === ImagePosition.Right,
                     'md:flex-row justify-start': imagePosition === ImagePosition.Left,
                 },
             )}
+
                         style={{backgroundColor: bgcolor, color: textcolor}}>
+
+
                 <div className="md:w-150 relative px-5">
-                    <img
-                        src={image}
-                        className="rounded-md relative"
-                    />
+                    <motion.div
+                        animate={isHovered}
+                        variants={{
+                            inactive: {scale: 1.0},
+                            active: {scale: 1.1}
+                        }}
+                    >
+                        <img
+                            src={image}
+                            className="rounded-md relative"
+                        />
+                    </motion.div>
+
                 </div>
 
                 <div className={clsx(

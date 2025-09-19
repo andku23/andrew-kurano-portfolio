@@ -29,6 +29,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "daisyui": "^5.0.50",
+    "react-grid-layout": "^1.5.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
