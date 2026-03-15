@@ -1,18 +1,20 @@
-@import "constants";
+@use "constants";
 
 :root {
-  --vh: 1vh;
-  --vw: 1vw;
+    --vh: 1vh;
+    --vw: 1vw;
 }
 
-@function vw($pxSize, $design-width: $design-width-mobile)
-{
-  $size: calc($pxSize / $design-width);
-  @return #{$size * 100}vw;
+body {
+    margin: 0;
 }
 
-@function vh($pxSize, $design-height: $design-height-mobile)
-{
-  $size: calc($pxSize / $design-height);
-  @return calc(var(--vh) * #{$size * 100});
+@function vw($pxSize, $design-width: $design-width-mobile) {
+    $size: calc($pxSize / $design-width);
+    @return #{$size * 100}vw;
+}
+
+@function vh($pxSize, $design-height: $design-height-mobile) {
+    $size: calc($pxSize / $design-height);
+    @return calc(var(--vh) * #{$size * 100});
 }

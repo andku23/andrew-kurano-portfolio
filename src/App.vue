@@ -1,11 +1,22 @@
-<script setup></script>
+<script setup>
+import About from './components/about.vue';
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class = "main-page">
+    <About/>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped lang='scss'>
+@use "./sass/global-classes";
+
+.main-page{
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-color: red;
+ top: 0;
+}
+
+</style>
