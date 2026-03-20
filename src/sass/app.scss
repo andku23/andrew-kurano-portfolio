@@ -1,3 +1,4 @@
-@use "./fonts.scss";
-@use "./global-classes.scss";
-@use "./functions.scss";
+@forward "./fonts.scss";
+@forward "./global-classes.scss";
+@forward "./constants.scss";
+@forward "./functions.scss";

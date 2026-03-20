@@ -1,0 +1,26 @@
+{
+    "name": "Andrew Kurano",
+    "logoType": {
+        "mobile": "Andrew Kurano",
+        "desktop": "Andrew Kurano"
+    },
+    "mainPicture": "",
+    "mainPictureJPG": "",
+    "pronunciation": "",
+    "audioFile": "",
+    "cssVarPrefix": "hp",
+    "email": "kuranoandrew@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/andrew-kurano",
+    "github": "",
+    "resume": "https://andku23.github.io/Resume-AndrewKurano.pdf",
+    "socials": [
+        {
+            "type": "linkedin",
+            "link": "https://www.linkedin.com/in/andrew-kurano"
+        },
+        {
+            "type": "mail",
+            "link": "mailto:kuranoandrew@gmail.com"
+        }
+    ]
+}

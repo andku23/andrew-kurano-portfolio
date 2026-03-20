@@ -1,9 +1,11 @@
 <script setup>
+import NavBar from './components/navbar.vue';
 import About from './components/about.vue';
 </script>
 
 <template>
   <div class = "main-page">
+    <NavBar/>
     <About/>
   </div>
 </template>
@@ -15,8 +17,7 @@ import About from './components/about.vue';
   position: relative;
   width: 100vw;
   height: auto;
-  background-color: red;
- top: 0;
+  top: 0;
 }
 
 </style>

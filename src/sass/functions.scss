@@ -1,4 +1,6 @@
-@use "constants";
+
+$design-width-desktop: 1920;
+$design-height-desktop: 1080;
 
 :root {
     --vh: 1vh;
@@ -7,14 +9,25 @@
 
 body {
     margin: 0;
+    font-family: Sansation;
+    font-weight: 500;
+    scrollbar-gutter: stable both-edges;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+
+    *{
+        box-sizing: border-box;
+    }
 }
 
-@function vw($pxSize, $design-width: $design-width-mobile) {
+@function vw($pxSize, $design-width: $design-width-desktop) {
     $size: calc($pxSize / $design-width);
-    @return #{$size * 100}vw;
+    @return calc(var(--vw) * #{$size * 100});
 }
 
-@function vh($pxSize, $design-height: $design-height-mobile) {
+@function vh($pxSize, $design-height: $design-height-desktop) {
     $size: calc($pxSize / $design-height);
     @return calc(var(--vh) * #{$size * 100});
 }
