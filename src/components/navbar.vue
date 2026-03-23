@@ -21,6 +21,10 @@ onMounted(() => {
           <NavbarButton :name = "linkData.name" :link = "linkData.link"/>
         </div>
     </div>
+
+    <div class = "built-by-area">
+      <h2>Built with Vite/Vue</h2>
+    </div>
   </div>
 </template>
 
@@ -36,6 +40,18 @@ onMounted(() => {
   padding-right: 20px;
 
   box-sizing: border-box;
+
+  .built-by-area{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+  }
 
   .links{
     position: relative;
