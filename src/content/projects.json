@@ -1,9 +1,9 @@
 [
     {
         "id": "featured-project-0",
-        "title": "GE Lighting CES Demo  ",
+        "title": "GE Lighting CES Demo",
         "location": "",
-        "demo": [
+        "buttonLinks": [
             {
                 "name": "Live Demo",
                 "url": "https://trigger-dev-public.s3-us-west-1.amazonaws.com/ge-lighting-ces2021-demo/develop/index.html "
@@ -22,7 +22,7 @@
         "id": "featured-project-1",
         "title": "Sony Pet Venomizer",
         "location": "",
-        "demo": [
+        "buttonLinks": [
             {
                 "name": "Live Demo",
                 "url": "https://trigger-dev-public.s3.us-west-1.amazonaws.com/sony-petvenomizer-mlwebsite/develop/index.html"
@@ -41,7 +41,7 @@
         "id": "featured-project-2",
         "title": "AWE Hot Ones! Panel",
         "location": "",
-        "demo": [],
+        "buttonLinks": [],
         "triggerSiteOverview": "https://awexr.com/usa-2025/agenda/1244-ar-you-sweating-yet-hot-wings-hotter-takes-on-geos",
         "tags": [],
         "description": "I had the fortune of doing a panel at AWE 2025 with the one-and-only Joe Gabriel from Niantic. Turns out it was a Hot Ones interview",
@@ -55,7 +55,7 @@
         "id": "featured-project-3",
         "title": "Google Brainwash",
         "location": "",
-        "demo": [],
+        "buttonLinks": [],
         "triggerSiteOverview": "https://www.triggerxr.com/work/google-home-project-brainwash",
         "tags": ["PixieJS", "Google DialogueFlow"],
         "description": "My one and only shipped game... was a 100% voice controlled puzzle for the Google Home where you would have to guess the word tying the images together.  It is sadly no longer on the store, but there does exist video of it working.",
@@ -70,7 +70,7 @@
         "id": "featured-project-4",
         "title": "Morgan Stanley PGA Tour Through Time",
         "location": "",
-        "demo": [],
+        "buttonLinks": [],
         "triggerSiteOverview": "https://www.triggerxr.com/work/tour-through-time-webar",
         "tags": [],
         "description": "This project is much more representative of the work I often found myself doing in XR.  This experience was linked to a specific golf course and users could go around to different holes and have a volumetric Justin Rose show the history that happened where they were standing.  While each individual part was not too hard, combining volumetric video, location locked content, achievement tracking, and 9 holes of content running on mobile, was certainly a challenge.",
@@ -84,7 +84,7 @@
         "id": "featured-project-5",
         "title": "Disney Avatar 2 Creature Creator",
         "location": "",
-        "demo": [
+        "buttonLinks": [
             {
                 "name": "Make a Fish",
                 "url": "https://www.avatar.com/keepouroceansamazing/creaturecreator/"
@@ -107,7 +107,7 @@
         "id": "featured-project-6",
         "title": "Mercedes F1 Garage Tour",
         "location": "",
-        "demo": [],
+        "buttonLinks": [],
         "triggerSiteOverview": "https://www.triggerxr.com/work/mercedes-amg-petronas-f1-team-vip-garage-tour-2024",
         "tags": [],
         "description": "This experience was originally made for the F1 event in vegas to showcase the F1 Garage, and we added additional features like an interactive reflex-testing game similar to what the F1 drivers train on. I spent most of my time building said reflex game, and helping port the app over to the Quest platform.",

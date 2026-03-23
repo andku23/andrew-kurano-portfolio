@@ -3,6 +3,7 @@ import NavBar from './components/navbar.vue';
 import About from './components/about.vue';
 import projectList from '@/content/projects.json'
 import ProjectItem from './components/project-item.vue';
+import SectionHeader from './components/section-header.vue'
 
 const pipeIndex = (index) => {
   return index;
@@ -14,6 +15,7 @@ const pipeIndex = (index) => {
   <div class = "main-page">
     <NavBar/>
     <About/>
+    <SectionHeader title = "Work Projects"></SectionHeader>
     <ProjectItem v-for = "(projectData, index) in projectList" :key = "projectData.id" :align-left = "pipeIndex(index)%2==0" :project-data="projectData" />
   </div>
 </template>
