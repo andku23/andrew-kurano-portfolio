@@ -5,7 +5,7 @@ import about from "@/content/about.json";
 
 <template>
   <div class = "about">
-    <img class = "portrait-image" src = "/assets/imgs/headshot.jpg">
+    <img class = "portrait-image"  src = "/assets/imgs/headshot.jpg">
     <div class = "info-section">
       <h1>{{common.name}}</h1>
       <p>{{about.body0}}</p>
@@ -44,6 +44,7 @@ import about from "@/content/about.json";
 
       @media only screen and (max-width: $tablet) {
         width: 80%;
+        margin-bottom: vw(100);
       }
     }
 

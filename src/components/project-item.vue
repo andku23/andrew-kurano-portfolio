@@ -1,20 +1,35 @@
 <script setup>
 
+import { ref, onMounted, onUnmounted } from 'vue';
+import { motion } from "motion-v";
+
 const props = defineProps({
   projectData: Object,
   alignLeft: Boolean
 });
 
+const transition = {
+  duration: 0.5,
+  ease: "easeInOut"
+}
+
 </script>
 
 <template>
-<div class = "project-item" :class = "{'align-left': alignLeft, 'align-right': !alignLeft}" :style = "{backgroundColor: projectData?.bgcolor, color: projectData?.textcolor}">
-    <img class = "project-image" :src = "projectData?.image">
-    <div class = "info-section">
-        <h1>{{projectData?.title}}</h1>
-        <p>{{projectData?.description}}</p>
-    </div>
-</div>
+    <motion.div
+        :transition="transition"
+        :initial="{ opacity: 0, x: '-100%'}"
+        :whileInView="{opacity: 1, x: '0%' }"
+    >
+        <div class = "project-item" :class = "{'align-left': alignLeft, 'align-right': !alignLeft}" :style = "{backgroundColor: projectData?.bgcolor, color: projectData?.textcolor}">
+            <img class = "project-image" :src = "projectData?.image">
+            <div class = "info-section">
+                <h1>{{projectData?.title}}</h1>
+                <p>{{projectData?.description}}</p>
+            </div>
+        </div>
+    </motion.div>
+
 </template>
 
 <style lang="scss" scoped>

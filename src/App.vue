@@ -14,7 +14,7 @@ const pipeIndex = (index) => {
   <div class = "main-page">
     <NavBar/>
     <About/>
-    <ProjectItem v-for = "(projectData, index) in projectList" :align-left = "pipeIndex(index)%2==0" :project-data="projectData" />
+    <ProjectItem v-for = "(projectData, index) in projectList" :key = "projectData.id" :align-left = "pipeIndex(index)%2==0" :project-data="projectData" />
   </div>
 </template>
 

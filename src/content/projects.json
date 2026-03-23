@@ -58,7 +58,7 @@
         "demo": [],
         "triggerSiteOverview": "https://www.triggerxr.com/work/google-home-project-brainwash",
         "tags": ["PixieJS", "Google DialogueFlow"],
-        "description": "My one and only shipped game... was a 100% voice controlled puzzle fot the Google Home where you would have to guess the word tying the images together.  It is sadly no longer on the store, but there does exist video of it working.",
+        "description": "My one and only shipped game... was a 100% voice controlled puzzle for the Google Home where you would have to guess the word tying the images together.  It is sadly no longer on the store, but there does exist video of it working.",
         "image": "/assets/imgs/featured-projects/googlebrainwash.jpg",
         "jpg": "/assets/imgs/featured-projects/googlebrainwash.jpg",
         "video": "/assets/imgs/featured-projects/gelighting.mp4",
