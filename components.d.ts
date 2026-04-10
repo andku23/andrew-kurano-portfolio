@@ -12,6 +12,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     About: typeof import('./src/components/about.vue')['default']
+    Footer: typeof import('./src/components/footer.vue')['default']
     Navbar: typeof import('./src/components/navbar.vue')['default']
     NavbarButton: typeof import('./src/components/navbar-button.vue')['default']
     ProjectItem: typeof import('./src/components/project-item.vue')['default']

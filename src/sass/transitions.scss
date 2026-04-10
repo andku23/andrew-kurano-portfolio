@@ -5,3 +5,12 @@
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
 }
+
+.list-scale-enter-active, .list-scale-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-scale-enter-from, .list-scale-leave-to {
+  height: 0;
+}
+

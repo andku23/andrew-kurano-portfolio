@@ -9,6 +9,10 @@
                 "url": "https://trigger-dev-public.s3-us-west-1.amazonaws.com/ge-lighting-ces2021-demo/develop/index.html "
             }
         ],
+        "responsibilities": [
+            "Created dynamic UI system that syncs up UI light controls with the simulated lights in the accompanying scene to properly showcase GE lighting functionality",
+            "Combined different baked and dynamic lighting setups to visualize various lighting conditions such as sunset, inside, gamer lights, and nighttime garage lighting"
+        ],
         "triggerSiteOverview": "https://www.triggerxr.com/work/ge-lighting-ces-quicklook-and-virtual-home",
         "tags": ["Vue", "Playcanvas", "Sass"],
         "description": "A web based lighting demo to showcase GE Lighting's various automated lighting setups and controls at their internal convention.",
@@ -28,6 +32,11 @@
                 "url": "https://trigger-dev-public.s3.us-west-1.amazonaws.com/sony-petvenomizer-mlwebsite/develop/index.html"
             }
         ],
+        "responsibilities": [
+            "Worked with creative designers to create SASS styles to aesthetically match the Venom website on both mobile and desktop",
+            "Used local image recognition to prevent user data from being uploaded to AWS servers",
+            "Interact with AWS REST API to upload, process and format user images with Getty Image's ML model"
+        ],
         "triggerSiteOverview": "https://www.triggerxr.com/work/venomize-my-pet",
         "tags": [],
         "description": "A promotional app for the final Venom movie that leveraged Getty Images' custom trained ML model to convert pictures of peoples' pets into 'venomized' versions.",
@@ -42,6 +51,7 @@
         "title": "AWE Hot Ones! Panel",
         "location": "",
         "buttonLinks": [],
+        "responsibilities": [],
         "triggerSiteOverview": "https://awexr.com/usa-2025/agenda/1244-ar-you-sweating-yet-hot-wings-hotter-takes-on-geos",
         "tags": [],
         "description": "I had the fortune of doing a panel at AWE 2025 with the one-and-only Joe Gabriel from Niantic. Turns out it was a Hot Ones interview",
@@ -56,6 +66,7 @@
         "title": "Google Brainwash",
         "location": "",
         "buttonLinks": [],
+        "responsibilities": [],
         "triggerSiteOverview": "https://www.triggerxr.com/work/google-home-project-brainwash",
         "tags": ["PixieJS", "Google DialogueFlow"],
         "description": "My one and only shipped game... was a 100% voice controlled puzzle for the Google Home where you would have to guess the word tying the images together.  It is sadly no longer on the store, but there does exist video of it working.",
@@ -71,6 +82,7 @@
         "title": "Morgan Stanley PGA Tour Through Time",
         "location": "",
         "buttonLinks": [],
+        "responsibilities": [],
         "triggerSiteOverview": "https://www.triggerxr.com/work/tour-through-time-webar",
         "tags": [],
         "description": "This project is much more representative of the work I often found myself doing in XR.  This experience was linked to a specific golf course and users could go around to different holes and have a volumetric Justin Rose show the history that happened where they were standing.  While each individual part was not too hard, combining volumetric video, location locked content, achievement tracking, and 9 holes of content running on mobile, was certainly a challenge.",
@@ -94,6 +106,7 @@
                 "url": "https://www.avatar.com/keepouroceansamazing/creaturecreator/#/FollowFish?name=VPRHEY"
             }
         ],
+        "responsibilities": [],
         "triggerSiteOverview": "https://www.triggerxr.com/work/avatar-the-way-of-water",
         "tags": ["PS: use it on mobile", "(or simulate mobile on browser)"],
         "description": "A fishtank app created as a part of Disney's Avatar 2 conservation campaign.  You create a fish, and then you can let it swim around in a larger aquarium app.  However, we had to tie all the data together with a database because the tank and creator were on Unity/Web.  I spent HOURS creating instance shaders to get the underwater scene running on phone.",
@@ -108,6 +121,7 @@
         "title": "Mercedes F1 Garage Tour",
         "location": "",
         "buttonLinks": [],
+        "responsibilities": [],
         "triggerSiteOverview": "https://www.triggerxr.com/work/mercedes-amg-petronas-f1-team-vip-garage-tour-2024",
         "tags": [],
         "description": "This experience was originally made for the F1 event in vegas to showcase the F1 Garage, and we added additional features like an interactive reflex-testing game similar to what the F1 drivers train on. I spent most of my time building said reflex game, and helping port the app over to the Quest platform.",
