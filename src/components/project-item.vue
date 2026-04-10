@@ -64,8 +64,7 @@ const linkout = (href) => {
                     RESPONSIBILITIES
                     <img class = "arrow" src = "../../public/assets/imgs/chevron-down-icon.svg">
                 </div>
-                <TransitionGroup name = "list-scale" class = "transition-group" 
-                tag="ul" :css="false">
+                <TransitionGroup class = "transition-group" name = "listscale" tag="ul">
                     <li v-for = "resp in roles" :key="resp">
                         {{resp}}
                     </li>
@@ -80,8 +79,19 @@ const linkout = (href) => {
 @use "@/sass/fonts.scss";
 @use "@/sass/constants.scss";
 
+.listscale-move, 
+.listscale-enter-active, 
+.listscale-leave-active {
+  transition: all 0.5s ease;
+}
+
 .transition-group{
-    transition: all 0.5s ease;
+    //transition: all 0.5s ease;
+}
+
+.listscale-enter-from, .listscale-leave-to {
+  opacity: 0;
+  max-height: 0;
 }
 
 .align-left {
@@ -199,12 +209,10 @@ const linkout = (href) => {
 
     .responsibilities-section{
         width: 100%;
-        height: contain;
         transition: all 0.5s ease;
         pointer-events: all;
         font-size: 20px;
 
-       
         .expand-button{
             width: 100%;
             height: 50px;
@@ -215,6 +223,7 @@ const linkout = (href) => {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 35px;
 
             .arrow{
                 width: 20px;
@@ -224,8 +233,8 @@ const linkout = (href) => {
 
         li{
             position: relative;
-            height: contain;
             margin-top: 10px;
+            max-height: fit-content;
         }
     }
 

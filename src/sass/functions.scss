@@ -7,13 +7,14 @@ $design-height-desktop: 1080;
     --vw: 1vw;
 }
 
+html,
 body {
     margin: 0;
     font-family: Sansation;
     font-weight: 500;
-    scrollbar-gutter: stable both-edges;
 
-    overflow-x: hidden;
+    //left: 0;
+    //overflow-x: hidden;
     overflow-y: scroll;
     box-sizing: border-box;
 
