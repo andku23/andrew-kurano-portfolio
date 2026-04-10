@@ -7,7 +7,7 @@ link: String,
 });
 
 const linkout = function () {
-  window.open(link, "_blank");
+  window.open(props.link, "_blank");
 };
 </script>
 
