@@ -1,0 +1,20 @@
+<template>
+  <div class = "footer">
+    <h2>This the footer</h2>
+  </div>
+</template>
+
+<script setup>
+</script>
+
+<style lang="scss" scoped>
+.footer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>

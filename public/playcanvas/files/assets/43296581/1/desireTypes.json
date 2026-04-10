@@ -1,9 +1,0 @@
-{ 
-    "desire-types": [
-        {"type": "building-block", "name": "Building Size", "multiplier": 1},
-        {"type": "wall", "name": "Wall", "multiplier": 10},
-        {"type": "door", "name": "Door", "multiplier": 2},
-        {"type": "floor", "name": "Floor", "multiplier": 5},
-        {"type": "window", "name": "Window", "multiplier": 3}
-    ]
-}

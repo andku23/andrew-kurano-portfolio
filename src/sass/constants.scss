@@ -1,0 +1,30 @@
+// Device Sizes
+$tablet: 650px;
+$tablet-sm: 650px;
+$phone-lg: 440px;
+$phone-md: 380px;
+$phone-sm: 330px;
+
+$tablet-landscape: 1050px;
+$phone-lg-landscape: 850px;
+$phone-md-landscape: 700px;
+$phone-sm-landscape: 600px;
+
+$design-width-mobile: 375;
+$design-height-mobile: 639;
+
+// $design-width-desktop: 1920;
+// $design-height-desktop: 1080;
+
+// Base Colors
+$white-0: #ffffff;
+$grey-0: #333333;
+$black-0: #000000;
+
+// App colors (References the Base colors)
+$main-background: $black-0;
+$main-text: $white-0;
+
+$nav-bar-background: $black-0;
+$nav-bar-background-hover: $grey-0;
+$nav-bar-background-active: $white-0;
