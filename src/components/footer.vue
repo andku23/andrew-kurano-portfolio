@@ -1,6 +1,5 @@
 <template>
   <div class = "footer">
-    <h2>This the footer</h2>
   </div>
 </template>
 

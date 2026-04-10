@@ -64,7 +64,7 @@ const linkout = (href) => {
                     RESPONSIBILITIES
                     <img class = "arrow" src = "../../public/assets/imgs/chevron-down-icon.svg">
                 </div>
-                <TransitionGroup @enter="onEnterTransition" 
+                <TransitionGroup name = "list-scale" class = "transition-group" 
                 tag="ul" :css="false">
                     <li v-for = "resp in roles" :key="resp">
                         {{resp}}
@@ -79,6 +79,10 @@ const linkout = (href) => {
 <style lang="scss" scoped>
 @use "@/sass/fonts.scss";
 @use "@/sass/constants.scss";
+
+.transition-group{
+    transition: all 0.5s ease;
+}
 
 .align-left {
     flex-direction: row;
@@ -198,6 +202,7 @@ const linkout = (href) => {
         height: contain;
         transition: all 0.5s ease;
         pointer-events: all;
+        font-size: 20px;
 
        
         .expand-button{
@@ -220,6 +225,7 @@ const linkout = (href) => {
         li{
             position: relative;
             height: contain;
+            margin-top: 10px;
         }
     }
 

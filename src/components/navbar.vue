@@ -18,7 +18,7 @@ onMounted(() => {
   <div class = "navbar flex-row">
     <div class = "links flex-row">
         <div v-for = "linkData in navbarLinksRef">
-          <NavbarButton :name = "linkData.name" :link = "linkData.link"/>
+          <NavbarButton :name = "linkData.name" :link = "linkData.href"/>
         </div>
     </div>
 
